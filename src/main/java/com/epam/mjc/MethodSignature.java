@@ -46,6 +46,11 @@ public class MethodSignature {
         return arguments;
     }
 
+    public void setArguments(List<Argument> arguments) {
+        this.arguments.clear();
+        this.arguments.addAll(arguments);
+    }
+
     public static class Argument {
         private String type;
         private String name;
